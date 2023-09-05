@@ -71,7 +71,7 @@ class ListTasksView(ListView):
         data = qs.filter(completed=True)
         return data
     
-def DeleteAll(request):
+def DeleteTasks(request):
     Item.objects.filter(completed=True).delete()
     return redirect("mainapp:main")
 

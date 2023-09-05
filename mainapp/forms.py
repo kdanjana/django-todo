@@ -2,8 +2,6 @@ from django import forms
 
 from .models import Item
 
-class ExForm(forms.Form):
-    myfield = forms.CharField(widget=forms.TextInput(attrs={'class': 'myfieldclass'}))
 
 class TodoForm(forms.ModelForm):
     class Meta:
